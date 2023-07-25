@@ -4,16 +4,16 @@
     <div class="title flex items-center ">
       <img src="@/assets/images/logo.png">
       <h1 class="mr-4 text-white font-bold">NSYSU選課小幫手</h1>
-      <div class="flex items-center relative" style="width: 500px;">
+      <div class="navbar-textbox-container flex items-center relative">
         <img src="@/assets/images/magnifier.png" class="navbar-icon absolute left-2">
         <input type="text" class="navbar-textbox text-white pl-10 w-full placeholder:text-white font-bold" placeholder="搜尋「課程名稱」、「課程代碼」、「教師姓名」
 ">
-        <img src="@/assets/images/wrong-white.png" class=" absolute right-2">
+        <img src="@/assets/images/wrong-white.png" class="cursor-pointer absolute right-2">
       </div>
     </div>
     <div class="text-2xl ul-list flex text-white font-bold">
       <div class="mr-4">Hello！王小明</div>
-      <div>會員登出</div>
+      <div class="cursor-pointer">會員登出</div>
     </div>
   </div>
 </template>
@@ -34,11 +34,15 @@
     h1 {
       font-size: 30px;
     }
+  }
 
-    .navbar-icon {
-      width: 22px;
-      height: 22px;
-    }
+  &-icon {
+    width: 22px;
+    height: 22px;
+  }
+
+  &-textbox-container {
+    width: 450px;
   }
 
   &-textbox {
