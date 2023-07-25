@@ -16,8 +16,8 @@
   </div>
 </template>
 <script setup>
-import NavbarTextBox from './NavbarTextBox/index.vue'
-import { useBurgerStore } from '../store/burger.js'
+import NavbarTextBox from '@/components/NavbarTextBox/index.vue'
+import { useBurgerStore } from '@/store/burger.js'
 const $store = useBurgerStore()
 </script>
 <style lang="scss">

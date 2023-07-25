@@ -8,10 +8,10 @@
   </main>
 </template>
 <script setup>
-import NavBar from './components/NavBar.vue'
-import LikeCourse from './components/LikeCourse.vue'
-import DepartmentCourse from './components/DepartmentCourse.vue'
-import Sidebar from './components/Sidebar.vue';
+import NavBar from '@/components/NavBar.vue'
+import LikeCourse from '@/components/LikeCourse.vue'
+import DepartmentCourse from '@/components/DepartmentCourse.vue'
+import Sidebar from '@/components/Sidebar.vue';
 </script>
 <style>
 #app {

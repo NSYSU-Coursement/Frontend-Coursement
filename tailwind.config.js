@@ -11,6 +11,7 @@ export default {
   },
   colors: {
     'gray': '#CDCDCD',
+    "blue": '#19647E'
   },
   plugins: [],
 }

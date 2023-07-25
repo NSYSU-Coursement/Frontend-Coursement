@@ -18,8 +18,8 @@
   </div>
 </template>
 <script setup>
-import LikeCourseList from "./LikeCourseList.vue";
-import DepartmentTextBox from "./DepartmentTextBox/index.vue";
+import LikeCourseList from "@/components/LikeCourseList.vue";
+import DepartmentTextBox from "@/components/DepartmentTextBox/index.vue";
 </script>
 <style lang="scss">
 .department {
