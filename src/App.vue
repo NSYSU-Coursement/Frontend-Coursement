@@ -1,6 +1,7 @@
 
 <template>
   <NavBar></NavBar>
+  <Sidebar></Sidebar>
   <main class="flex pl-3 pr-3 gap-2">
     <LikeCourse></LikeCourse>
     <DepartmentCourse></DepartmentCourse>
@@ -10,6 +11,7 @@
 import NavBar from './components/NavBar.vue'
 import LikeCourse from './components/LikeCourse.vue'
 import DepartmentCourse from './components/DepartmentCourse.vue'
+import Sidebar from './components/Sidebar.vue';
 </script>
 <style>
 #app {

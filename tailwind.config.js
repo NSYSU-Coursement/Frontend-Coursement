@@ -5,10 +5,11 @@ export default {
     "./src/**/*.{vue,js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    screens: {
+      'lg': "1140px"
+    }
   },
   colors: {
-    'custom-gray': '#CDCDCD',
     'gray': '#CDCDCD',
   },
   plugins: [],
