@@ -5,6 +5,6 @@
     <div class="flex relative items-center w-full">
         <input type="text" class="departmentSearch bg-gray-100 p-2 mb-5 leading-10 text-2xl font-bold w-full"
             placeholder="輸入系所查詢" />
-        <img src="@/assets/images/wrong-black.png" class="absolute right-4 cursor-pointer" />
+        <img src="@/assets/images/wrong-black.png" class="absolute right-4 cursor-pointer transform -translate-y-[-50]" />
     </div>
 </template>

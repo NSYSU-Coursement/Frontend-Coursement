@@ -15,6 +15,7 @@ import Sidebar from './components/Sidebar.vue';
 </script>
 <style>
 #app {
+  min-width: 500px;
   max-width: 1920px;
   margin: 0 auto;
 }
