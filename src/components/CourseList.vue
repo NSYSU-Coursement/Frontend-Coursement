@@ -12,10 +12,6 @@
         <p class="text-3xl font-bold mr-3">50</p>
         <img src="@/assets/images/write.png" class="icon" />
       </div>
-      <div class="comment items-center hidden lg:flex">
-        <p class="text-3xl font-bold mr-3">100</p>
-        <img src="@/assets/images/heart-full.png" class="icon" />
-      </div>
     </div>
   </div>
 </template>
