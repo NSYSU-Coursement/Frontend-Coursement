@@ -13,6 +13,7 @@
 </template>
 <style lang="scss">
 .sortSelect {
+    margin-top: 10px ;
     width: 150px;
     height: 40px;
 }
