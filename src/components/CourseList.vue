@@ -1,7 +1,7 @@
 <template>
   <div class="courseList p-6 flex items-center justify-between mb-2 bg-white cursor-pointer hover:bg-slate-300">
     <div class="flex items-center">
-      <img class="star icon mr-4 cursor-pointer" src="@/assets/images/star-full.png" />
+      <starComponent :star-full-control="starFullIsTrue" @toggle-star="toggleStar"></starComponent>
       <div class="department-circle flex justify-center items-center font-bold text-xl px-4 py-3 mr-4">
         外
       </div>
@@ -15,7 +15,15 @@
     </div>
   </div>
 </template>
-<script setup></script>
+<script setup>
+import starComponent from '@/components/Star/index.vue'
+import { ref } from 'vue';
+const starFullIsTrue=ref(false)
+const toggleStar=()=>{
+  //api串接
+  starFullIsTrue.value=!starFullIsTrue.value
+}
+</script>
 <style lang="scss">
 .courseList {
   border: 2px solid #cdcdcd;

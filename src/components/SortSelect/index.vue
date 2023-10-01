@@ -1,8 +1,9 @@
 <template>
     <div class="flex justify-end mb-6">
         <select class="sortSelect border-2 border-gray-300 font-bold">
-            <option v-for="(condition, i) in optionList" v-key="i">{{ condition }}</option>
-        </select>
+  <option v-for="(condition, i) in optionList" :key="i">{{ condition }}</option>
+</select>
+
     </div>
 </template>
 <script setup>

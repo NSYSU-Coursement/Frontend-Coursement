@@ -4,8 +4,8 @@
         <div class="sidebar-head bg-[#19647E] flex justify-start items-center min-h-[250px] w-full">
             <img src="@/assets/images/user.png">
             <div class="text">
-                <P class=" text-white font-bold text-2xl mb-3">Hello 王小明！</P>
-                <P class=" text-white font-bold text-2xl cursor-pointer">會員登出</P>
+                <p class=" text-white font-bold text-2xl mb-3">Hello 王小明！</p>
+                <p class=" text-white font-bold text-2xl cursor-pointer">會員登出</p>
             </div>
         </div>
         <div class="sidebar-body p-4">
@@ -19,10 +19,7 @@
                 <LikeCourseList></LikeCourseList>
                 <LikeCourseList></LikeCourseList>
                 <LikeCourseList></LikeCourseList>
-                <LikeCourseList></LikeCourseList>
-                <LikeCourseList></LikeCourseList>
-                <LikeCourseList></LikeCourseList>
-            </div>
+                 </div>
         </div>
     </div>
     <div class="landing fixed left-0 top-0 z-10 w-full h-screen" @click="$store.burgerToggle" v-show="$store.isOpen"></div>
