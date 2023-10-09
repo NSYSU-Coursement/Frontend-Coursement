@@ -5,20 +5,15 @@
       <img class="icon mr-4" src="@/assets/images/heart-full.png" />已收藏課程
     </div>
     <div class="course-list-container flex flex-col overflow-y-auto overflow-x-hidden">
-      <LikeCourseList></LikeCourseList>
-      <LikeCourseList></LikeCourseList>
-      <LikeCourseList></LikeCourseList>
-      <LikeCourseList></LikeCourseList>
-      <LikeCourseList></LikeCourseList>
-      <LikeCourseList></LikeCourseList>
-      <LikeCourseList></LikeCourseList>
-      <LikeCourseList></LikeCourseList>
-      <LikeCourseList></LikeCourseList>
+            <CourseList :list-is-course-list="false"></CourseList>
+            <CourseList :list-is-course-list="false"></CourseList>
+            <CourseList :list-is-course-list="false"></CourseList>
+            <CourseList :list-is-course-list="false"></CourseList>
     </div>
   </div>
 </template>
 <script setup>
-import LikeCourseList from "@/components/LikeCourseList.vue";
+import CourseList from "@/components/CourseList.vue";
 import DepartmentTextBox from "@/components/DepartmentTextBox/index.vue";
 </script>
 <style lang="scss">

@@ -6,13 +6,10 @@
         <DepartmentTextBox class="lg:hidden block"></DepartmentTextBox>
         <SortSelect></SortSelect>
         <div class="course-list-container flex flex-col">
-            <CourseList></CourseList>
-            <CourseList></CourseList>
-            <CourseList></CourseList>
-            <CourseList></CourseList>
-            <CourseList></CourseList>
-            <CourseList></CourseList>
-            <CourseList></CourseList>
+            <CourseList :list-is-course-list="true"></CourseList>
+            <CourseList :list-is-course-list="true"></CourseList>
+            <CourseList :list-is-course-list="true"></CourseList>
+            <CourseList :list-is-course-list="true"></CourseList>
         </div>
     </div>
 </template>

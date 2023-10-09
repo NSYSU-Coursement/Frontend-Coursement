@@ -15,7 +15,8 @@ const starFullIsTrue=ref(false)
 const toggleStar=()=>{
   //api串接
   starFullIsTrue.value=!starFullIsTrue.value
-}</script>
+}
+</script>
 <style lang="scss">
 .list {
   border-top: 5px solid #cdcdcd;
