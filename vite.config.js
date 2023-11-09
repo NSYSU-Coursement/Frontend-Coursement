@@ -6,7 +6,7 @@ import vue from '@vitejs/plugin-vue'
 export default defineConfig({
   plugins: [vue()],
   server: {
-    port: 3000, // 設置 Vite 的端口为 3000
+    port: 3001, // 設置 Vite 的端口为 3000
   },
   resolve: {
     alias: {
