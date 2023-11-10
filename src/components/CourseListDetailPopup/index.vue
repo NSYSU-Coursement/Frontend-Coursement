@@ -27,7 +27,7 @@
                 </div>
                 <div class="">
                   <div class="img flex mb-4 items-center">
-                    <img src="../../assets/images/comment.png" alt="" />
+                    <img src="@/assets/images/comment.png" alt="" />
                     <p class="text-4xl ml-2">綜合評價</p>
                   </div>
                   <div
