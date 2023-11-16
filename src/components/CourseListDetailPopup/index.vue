@@ -31,11 +31,20 @@
                     <p class="text-4xl ml-2">綜合評價</p>
                   </div>
                   <div
-                    class="w-100 text-3xl border-gray-400 border rounded p-4"
+                    class="w-full text-2xl border-gray-400 border rounded p-4"
                   >
-                    <div class="flex mb-2">收穫</div>
-                    <div class="flex mb-2">甜度</div>
-                    <div class="flex">涼度</div>
+                    <div class="flex mb-2 items-center gap-2">
+                      <p class="w-[60px]">收穫</p>
+                      <Progress :data="reward"></Progress>
+                    </div>
+                    <div class="flex mb-2 items-center gap-2">
+                      <p class="w-[60px]">甜度</p>
+                      <Progress :data="sweet"></Progress>
+                    </div>
+                    <div class="flex items-center gap-2">
+                      <p class="w-[60px]">涼度</p>
+                      <Progress :data="cool"></Progress>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -49,7 +58,7 @@
               X
             </button>
             <div class="flex items-center content-start text-4xl mb-2">
-              <img src="@/assets/images/light.png" alt="" />
+              <img src="@/assets/images/light.png" />
               <h4>同學怎麼說</h4>
             </div>
             <div class="overflow-y-auto max-h-[400px] mb-2">
@@ -63,7 +72,8 @@
               </div>
             </div>
             <div
-              class="w-100 h-[80px] text-1xl text-gray-400 p-2 border-gray-400 border rounded relative text-2xl cursor-pointer"
+              @click="WriteCommentHandlerPopup"
+              class="w-full h-[80px] text-1xl text-gray-400 p-2 border-gray-400 border rounded relative text-2xl cursor-pointer"
             >
               換你說說話！
               <img
@@ -74,16 +84,30 @@
           </div>
         </div>
       </div>
+      <WriteCommentPopup
+        :write-comment-popup-show="WriteCommentPopupToggle"
+        @close-popup="closePopup"
+      ></WriteCommentPopup>
     </div>
   </div>
 </template>
 
 <script setup>
-import { defineProps } from "vue";
+import { defineProps, ref } from "vue";
+import Progress from "@/components/ProgressBar/index.vue";
+import WriteCommentPopup from "@/components/WriteCommentPopup/index.vue";
 const props = defineProps({
   courseListDetailPopupShow: Boolean,
   data: Object,
 });
+const WriteCommentPopupToggle = ref(false);
+const WriteCommentHandlerPopup = () => {
+  WriteCommentPopupToggle.value = !WriteCommentPopupToggle.value;
+};
+//fakeData
+const reward = ref(3);
+const sweet = ref(6);
+const cool = ref(7);
 const fakeComment = [
   {
     id: 0,
@@ -104,6 +128,9 @@ const fakeComment = [
       "甜甜涼涼的學分，超級適合缺學分的我~基本上不要太常翹課分數都不會太難看，蠻適合用來拚GPA的 ！",
   },
 ];
+const closePopup = () => {
+  WriteCommentPopupToggle.value = false;
+};
 </script>
 
-<style scoped></style>
+<style lang="scss" scoped></style>
