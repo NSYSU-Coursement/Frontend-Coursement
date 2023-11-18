@@ -1,7 +1,7 @@
 <template>
   <div class="">
     <div
-      @click="courseListDetailPopupToggle = true"
+      @click="courseListDetailPopupToggle "
       class="courseList p-6 flex items-center justify-between bg-white cursor-pointer hover:bg-slate-300"
     >
       <div class="flex items-center">
@@ -25,7 +25,7 @@
     </div>
     <CourseListDetailPopup
       :data="courseData"
-      :course-list-detail-popup-show="courseListDetailPopupToggle"
+      :course-list-detail-popup-show="courseListDetailPopupShow"
       @close-popup="closePopup"
     ></CourseListDetailPopup>
   </div>
@@ -39,13 +39,18 @@ const props = defineProps({
   courseData: Object,
 });
 const starFullIsTrue = ref(false);
-const courseListDetailPopupToggle = ref(false);
+const courseListDetailPopupShow=ref(false)
 const toggleStar = () => {
   //api串接
   starFullIsTrue.value = !starFullIsTrue.value;
 };
+const courseListDetailPopupToggle = () => {
+  courseListDetailPopupShow.value = true;
+  document.body.style.overflowY = 'hidden';
+};
 const closePopup = () => {
-  courseListDetailPopupToggle.value = false;
+  courseListDetailPopupShow.value = false;
+  document.body.style.overflowY = 'auto';
 };
 </script>
 <style lang="scss">
