@@ -1,7 +1,7 @@
 <template>
   <div class="">
     <div
-      @click="courseListDetailPopupToggle "
+      @click="courseListDetailPopupToggle"
       class="courseList p-6 flex items-center justify-between bg-white cursor-pointer hover:bg-slate-300"
     >
       <div class="flex items-center">
@@ -10,11 +10,11 @@
           @toggle-star="toggleStar"
         ></starComponent>
         <div
-          class="department-circle flex justify-center items-center font-bold text-xl px-4 py-3 mr-4"
+          class="department-circle flex justify-center items-center font-bold text-2xl px-4 py-3 mr-4"
         >
           外
         </div>
-        <div class="course font-bold text-xl">112世紀美國戲劇</div>
+        <div class="course font-bold text-2xl">{{ props.courseData.name }}</div>
       </div>
       <div class="flex items-center" v-show="props.listIsCourseList">
         <div class="comment flex items-center mr-3">
@@ -39,18 +39,18 @@ const props = defineProps({
   courseData: Object,
 });
 const starFullIsTrue = ref(false);
-const courseListDetailPopupShow=ref(false)
+const courseListDetailPopupShow = ref(false);
 const toggleStar = () => {
   //api串接
   starFullIsTrue.value = !starFullIsTrue.value;
 };
 const courseListDetailPopupToggle = () => {
   courseListDetailPopupShow.value = true;
-  document.body.style.overflowY = 'hidden';
+  document.body.style.overflowY = "hidden";
 };
 const closePopup = () => {
   courseListDetailPopupShow.value = false;
-  document.body.style.overflowY = 'auto';
+  document.body.style.overflowY = "auto";
 };
 </script>
 <style lang="scss">

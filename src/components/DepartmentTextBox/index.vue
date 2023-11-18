@@ -1,6 +1,6 @@
 <template>
     <div class="">
-        <div class="title text-4xl font-bold mb-3 flex lg:justify-start justify-center">
+        <div class="title lg:text-4xl text-2xl font-bold flex lg:justify-start justify-center my-5">
             <img class="icon mr-4" src="@/assets/images/magnifier-full.png" />依系所查詢
         </div>
         <div class="flex relative items-center w-full">

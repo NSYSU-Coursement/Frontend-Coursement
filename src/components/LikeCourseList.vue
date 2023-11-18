@@ -1,10 +1,10 @@
 <template>
   <div class="list p-2 flex items-center hover:bg-slate-300 cursor-pointer">
     <starComponent :star-full-control="starFullIsTrue" @toggle-star="toggleStar"></starComponent>
-      <div class="department-circle flex items-center justify-center font-bold text-xl px-4 py-3 mr-4">
+      <div class="department-circle flex items-center justify-center font-bold text-2xl px-4 py-3 mr-4">
       外
     </div>
-    <div class="course font-bold text-xl">112世紀美國戲劇</div>
+    <div class="course font-bold text-2xl">112世紀美國戲劇</div>
   </div>
 </template>
 <script setup>

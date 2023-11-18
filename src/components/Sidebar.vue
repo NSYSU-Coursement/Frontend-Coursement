@@ -17,7 +17,7 @@
         </div>
       </div>
       <div class="sidebar-body p-4">
-        <div class="title text-4xl font-bold mb-3 flex">
+        <div class="title lg:text-4xl text-2xl font-bold mb-3 flex">
           <img
             class="icon mr-4"
             src="@/assets/images/heart-full.png"

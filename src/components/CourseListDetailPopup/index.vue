@@ -5,19 +5,19 @@
       class="fixed inset-0 flex items-center justify-center z-50"
     >
       <div
-        class="modal-overlay fixed top-0 left-0 right-0 bottom-0 bg-black bg-opacity-50"
+        class="model-overlay fixed top-0 left-0 right-0 bottom-0 bg-black bg-opacity-50"
         @click="$emit('closePopup')"
       ></div>
       <div
-        class="modal-container rounded-md shadow-md bg-white w-96 h-[600px] min-w-[960px] mx-auto px-8 py-4 z-50 relative"
+        class="model-container rounded-md shadow-md bg-white w-96 lg:h-[600px] h-[90%] lg:min-w-[960px] min-w-[80%] mx-auto px-8 py-4 z-50 relative"
       >
-        <div class="flex flex-row">
-          <div class="w-1/2">
-            <h2 class="text-4xl mb-2">{{ props.data.name }}</h2>
+        <div class="flex flex-col lg:flex-row items-center">
+          <div class="lg:w-1/2 w-full">
+            <h2 class="lg:text-4xl text-3xl mb-2">{{ props.data.name }}</h2>
             <div class="flex">
-              <div class="">
+              <div class=" w-full">
                 <div
-                  class="text-3xl mt-4 mb-4 bg-slate-200 text-black py-4 px-4 rounded min-w-[400px]"
+                  class="lg:text-3xl text-2xl mt-4 mb-4 bg-slate-200 text-black py-4 px-4 rounded lg:max-w-[400px]"
                 >
                   <p>課程代號：{{ props.data.code }}</p>
                   <p>課程教師：{{ props.data.teacher }}</p>
@@ -28,10 +28,10 @@
                 <div class="">
                   <div class="img flex mb-4 items-center">
                     <img src="@/assets/images/comment.png" alt="" />
-                    <p class="text-4xl ml-2">綜合評價</p>
+                    <p class="lg:text-4xl text-3xl ml-2">綜合評價</p>
                   </div>
                   <div
-                    class="w-full text-2xl border-gray-400 border rounded p-4"
+                    class="w-full text-2xl border-gray-400 border rounded p-4 lg:max-w-[400px]"
                   >
                     <div class="flex mb-2 items-center gap-2">
                       <p class="w-[60px]">收穫</p>
@@ -50,14 +50,14 @@
               </div>
             </div>
           </div>
-          <div class="w-1/2 mt-5">
+          <div class="lg:w-1/2 w-full mt-5">
             <button
               @click="$emit('closePopup')"
-              class="absolute top-0 right-2 text-gray font-bold py-2 px-4 text-4xl rounded"
+              class="absolute top-0 right-2 text-gray font-bold py-2 px-4 lg:text-4xl text-2xl rounded"
             >
               X
             </button>
-            <div class="flex items-center content-start text-4xl mb-2">
+            <div class="flex items-center content-start lg:text-4xl text-3xl mb-2">
               <img src="@/assets/images/light.png" />
               <h4>同學怎麼說</h4>
             </div>
@@ -123,6 +123,18 @@ const fakeComment = [
   },
   {
     id: 3,
+    time: "111-2 學期",
+    content:
+      "甜甜涼涼的學分，超級適合缺學分的我~基本上不要太常翹課分數都不會太難看，蠻適合用來拚GPA的 ！",
+  },
+  {
+    id: 4,
+    time: "111-2 學期",
+    content:
+      "甜甜涼涼的學分，超級適合缺學分的我~基本上不要太常翹課分數都不會太難看，蠻適合用來拚GPA的 ！",
+  },
+  {
+    id: 5,
     time: "111-2 學期",
     content:
       "甜甜涼涼的學分，超級適合缺學分的我~基本上不要太常翹課分數都不會太難看，蠻適合用來拚GPA的 ！",

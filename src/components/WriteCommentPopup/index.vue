@@ -4,32 +4,31 @@
     v-show="writeCommentPopupShow"
   >
     <div
-      class="modal-overlay fixed top-0 left-0 right-0 bottom-0 bg-black bg-opacity-50"
+      class="model-overlay fixed top-0 left-0 right-0 bottom-0 bg-black bg-opacity-50"
       @click="$emit('closePopup')"
     ></div>
     <div
-      class="modal-container rounded-md shadow-md bg-white w-96 h-[500px] min-w-[1000px] mx-auto px-8 py-12 z-50 relative"
+      class="model-container rounded-md shadow-md bg-white w-96 lg:h-[500px] h-[60%] lg:min-w-[1000px] mx-auto px-8 py-12 z-50 relative"
     >
-      <div class="flex flex-row h-full gap-16">
-        <div class="w-1/2 h-full">
-          <h2 class="text-4xl"></h2>
+      <div class="flex lg:flex-row flex-col h-full lg:gap-16 gap-2">
+        <div class="lg:w-1/2 w-full h-full">
           <textarea
             type="text"
             class="w-full h-full text-1xl text-gray-400 p-2 border-gray-400 border rounded relative text-xl"
             placeholder="換你說說話！"
           ></textarea>
         </div>
-        <div class="w-1/2 mt-5">
+        <div class="lg:w-1/2 w-full mt-5">
           <button
             @click="$emit('closePopup')"
-            class="absolute top-0 right-2 text-gray font-bold py-2 px-4 text-4xl rounded"
+            class="absolute top-0 right-2 text-gray font-bold py-2 px-4 lg:text-4xl text-2xl rounded"
           >
             X
           </button>
           <div class="h-full">
             <div class="img flex mb-4 items-center">
               <img src="@/assets/images/comment.png" alt="" />
-              <p class="text-4xl ml-2">綜合評價</p>
+              <p class="lg:text-4xl text-2xl ml-2">綜合評價</p>
             </div>
             <div class="w-full text-2xl rounded py-4">
               <div class="flex mb-2 items-center gap-2">
