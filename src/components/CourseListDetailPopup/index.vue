@@ -9,7 +9,7 @@
         @click="$emit('closePopup')"
       ></div>
       <div
-        class="model-container rounded-md shadow-md bg-white w-96 lg:h-[600px] h-[90%] lg:min-w-[960px] min-w-[80%] mx-auto px-8 py-4 z-50 relative"
+        class="model-container rounded-md shadow-md bg-white w-96 lg:h-[600px] h-[90%] lg:min-w-[960px] min-w-[80%] mx-auto px-8 py-4 z-50 relative overflow-y-auto"
       >
         <div class="flex flex-col lg:flex-row items-center">
           <div class="lg:w-1/2 w-full">

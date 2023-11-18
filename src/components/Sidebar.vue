@@ -1,7 +1,7 @@
 <template>
   <div class="">
     <div
-      class="sidebar transition bg-white duration-150 ease-out fixed top-0 h-screen z-20 min-w-[450px]"
+      class="sidebar transition bg-white duration-150 ease-out fixed top-0 h-full z-20 max-w-[410px]"
       :class="{
         'translate-x-0': $store.isOpen,
         'translate-x-[-100%]': !$store.isOpen,
@@ -24,19 +24,33 @@
           />已收藏課程
         </div>
         <div
-          class="course-like-list-container flex flex-col overflow-y-auto overflow-x-hidden"
+          class="course-like-list-container max-h-[600px] flex flex-col overflow-y-auto overflow-x-hidden"
         >
-          <LikeCourseList></LikeCourseList>
-          <LikeCourseList></LikeCourseList>
-          <LikeCourseList></LikeCourseList>
-          <LikeCourseList></LikeCourseList>
-          <LikeCourseList></LikeCourseList>
-          <LikeCourseList></LikeCourseList>
+          <CourseList
+            :list-is-course-list="false"
+            :courseData="fakeData"
+          ></CourseList>
+          <CourseList
+            :list-is-course-list="false"
+            :courseData="fakeData"
+          ></CourseList>
+          <CourseList
+            :list-is-course-list="false"
+            :courseData="fakeData"
+          ></CourseList>
+          <CourseList
+            :list-is-course-list="false"
+            :courseData="fakeData"
+          ></CourseList>
+          <CourseList
+            :list-is-course-list="false"
+            :courseData="fakeData"
+          ></CourseList>
         </div>
       </div>
     </div>
     <div
-      class="landing fixed left-0 top-0 z-10 w-full h-screen"
+      class="landing fixed left-0 top-0 z-10 w-full h-full"
       @click="$store.burgerToggle"
       v-show="$store.isOpen"
     ></div>
@@ -44,7 +58,15 @@
 </template>
 <script setup>
 import { useBurgerStore } from "@/store/burger";
-import LikeCourseList from "@/components/LikeCourseList.vue";
+import CourseList from "@/components/CourseList.vue";
+const fakeData = {
+  name: "112 二十世紀美國戲劇",
+  code: "DFLL621",
+  teacher: "范澤凱",
+  department: "外文碩",
+  time: "[一] 567",
+  room: "LA3018",
+};
 const $store = useBurgerStore();
 </script>
 <style lang="scss">
@@ -53,7 +75,6 @@ const $store = useBurgerStore();
   border-bottom: 5px solid #cdcdcd;
   border-left: 10px solid #cdcdcd;
   border-right: 10px solid #cdcdcd;
-  max-height: 400px;
 }
 
 .landing {

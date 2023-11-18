@@ -14,7 +14,7 @@
         >
           外
         </div>
-        <div class="course font-bold text-2xl">{{ props.courseData.name }}</div>
+        <div class="course font-bold lg:text-2xl md:text-xl text-base">{{ props.courseData.name }}</div>
       </div>
       <div class="flex items-center" v-show="props.listIsCourseList">
         <div class="comment flex items-center mr-3">
