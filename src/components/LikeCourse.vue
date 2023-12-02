@@ -43,14 +43,14 @@
 <script setup>
 import CourseList from "@/components/CourseList.vue";
 import DepartmentTextBox from "@/components/DepartmentTextBox/index.vue";
-// const fakeData = {
-//   name: "112 二十世紀美國戲劇",
-//   code: "DFLL621",
-//   teacher: "范澤凱",
-//   department: "外文碩",
-//   time: "[一] 567",
-//   room: "LA3018",
-// };
+const fakeData = {
+  name: "112 二十世紀美國戲劇",
+  code: "DFLL621",
+  teacher: "范澤凱",
+  department: "外文碩",
+  time: "[一] 567",
+  room: "LA3018",
+};
 </script>
 <style lang="scss">
 .department {

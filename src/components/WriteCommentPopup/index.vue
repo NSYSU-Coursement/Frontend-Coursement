@@ -30,7 +30,7 @@
               <img src="@/assets/images/comment.png" alt="" />
               <p class="lg:text-4xl text-2xl ml-2">綜合評價</p>
             </div>
-            <div class="w-full text-2xl rounded py-4">
+            <div class="w-full text-xl rounded py-4">
               <div class="flex mb-2 items-center gap-2">
                 <p class="w-[60px]">收穫</p>
                 <Progress :data="reward" :can-drag="true"></Progress>
@@ -44,13 +44,13 @@
                 <Progress :data="cool" :can-drag="true"></Progress>
               </div>
             </div>
-            <select class="sortSelect border-2 border-gray-300 font-bold">
+            <select class="sortSelect w-[150px] h-[40px] border-2 border-gray-300 font-bold">
               <option v-for="(year, i) in yearPicker" :key="i">
                 {{ year }}
               </option>
             </select>
             <button
-              class="button absolute bottom-10 right-10 bg-[#19647E] rounded text-white text-2xl py-2 px-4"
+              class="button absolute bottom-4 lg:bottom-10 right-10 bg-[#19647E] rounded text-white text-2xl py-2 px-4"
             >
               送出
             </button>
