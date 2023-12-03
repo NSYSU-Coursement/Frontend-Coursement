@@ -24,6 +24,10 @@
           :list-is-course-list="false"
           :courseData="fakeData"
         ></CourseList>
+        <CourseList
+          :list-is-course-list="false"
+          :courseData="fakeData"
+        ></CourseList>
       </div>
       <div class="" v-else>
         <div

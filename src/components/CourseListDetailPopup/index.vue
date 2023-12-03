@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <Teleport to="body">
     <div
       v-if="courseListDetailPopupShow"
       class="fixed inset-0 flex items-center justify-center z-50"
@@ -89,7 +89,7 @@
         @close-popup="closePopup"
       ></WriteCommentPopup>
     </div>
-  </div>
+  </Teleport>
 </template>
 
 <script setup>

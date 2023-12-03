@@ -24,16 +24,8 @@
           />已收藏課程
         </div>
         <div
-          class="course-like-list-container max-h-[600px] flex flex-col overflow-y-auto overflow-x-hidden"
+          class="course-like-list-container max-h-[470px] flex flex-col overflow-y-auto overflow-x-hidden"
         >
-          <CourseList
-            :list-is-course-list="false"
-            :courseData="fakeData"
-          ></CourseList>
-          <CourseList
-            :list-is-course-list="false"
-            :courseData="fakeData"
-          ></CourseList>
           <CourseList
             :list-is-course-list="false"
             :courseData="fakeData"
