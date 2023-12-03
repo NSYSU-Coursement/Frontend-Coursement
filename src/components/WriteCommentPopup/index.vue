@@ -14,7 +14,7 @@
         <div class="lg:w-1/2 w-full h-full">
           <textarea
             type="text"
-            class="w-full h-full text-1xl text-gray-400 p-2 border-gray-400 border rounded relative text-xl"
+            class="w-full resize-none h-full text-1xl text-gray-400 p-2 border-gray-400 border rounded relative text-xl"
             placeholder="換你說說話！"
           ></textarea>
         </div>
