@@ -1,7 +1,7 @@
 
 <template>
   <div class="navbar flex sticky top-0 z-10 items-center lg:justify-between justify-center mb-4 px-4">
-    <div class="button burger cursor-pointer lg:hidden block absolute left-10" @click="$store.burgerToggle">
+    <div class="button burger cursor-pointer lg:hidden block absolute left-5" @click="$store.burgerToggle">
       <img src="@/assets/images/burger.png">
     </div>
     <div class="title flex items-center">
